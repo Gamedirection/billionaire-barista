@@ -2,13 +2,18 @@
     "name": "Billionaire Barista",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
     },
     "files": [
         "main.blocks",
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "images.g.jres",
+        "images.g.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -20,5 +25,23 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "palette": [
+        "#000000",
+        "#DAD7CD",
+        "#A3B18A",
+        "#588157",
+        "#3A5A40",
+        "#141D28",
+        "#DEC4C8",
+        "#BD727E",
+        "#9C404D",
+        "#6B2B32",
+        "#2E120F",
+        "#B6C5EC",
+        "#5477D9",
+        "#2547B6",
+        "#182E7B",
+        "#090935"
+    ]
 }

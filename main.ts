@@ -1,1 +1,7 @@
-
+scene.setBackgroundImage(assets.image`cityscape`)
+let mySprite = sprites.create(assets.image`myImage0`, SpriteKind.Player)
+let player2 = sprites.create(assets.image`myImage1`, SpriteKind.Player)
+controller.player1.moveSprite(mySprite, 100, 100)
+controller.player2.moveSprite(player2, 100, 100)
+info.setScore(120050)
+game.showLongText("This is very a long message to discuss the details of how the text box works. Can we make interted text with in this section?", DialogLayout.Bottom)
