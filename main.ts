@@ -2,12 +2,16 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
     if (true) {
         Collectibles.y = randint(32, 98)
         Collectibles.x = randint(32, 128)
+        list = [0, 1]
+        game.showLongText("TEXT HERE", DialogLayout.Bottom)
         info.setScore(info.score() + 1)
     }
 })
+let list: number[] = []
 let Collectibles: Sprite = null
 info.setScore(0)
 scene.setBackgroundImage(assets.image`cityscape`)
+let text_list = ["This is Message A", "This is Message B", "This is Message C"]
 let MainCharacter = sprites.create(img`
     . . . . . . . . . b 5 b . . . . 
     . . . . . . . . . b 5 b . . . . 
