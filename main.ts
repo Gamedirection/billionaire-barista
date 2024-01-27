@@ -3,15 +3,17 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
         Collectibles.y = randint(32, 98)
         Collectibles.x = randint(32, 128)
         list = [0, 1]
-        game.showLongText("TEXT HERE", DialogLayout.Bottom)
+        game.showLongText("Hello my " + lists_of_people._pickRandom() + " broke into my stash of " + list_of_objects._pickRandom() + " and stole all of them!", DialogLayout.Bottom)
         info.setScore(info.score() + 1)
     }
 })
 let list: number[] = []
+let list_of_objects: string[] = []
 let Collectibles: Sprite = null
+let lists_of_people: string[] = []
 info.setScore(0)
-scene.setBackgroundImage(assets.image`cityscape`)
-let text_list = ["This is Message A", "This is Message B", "This is Message C"]
+scene.setBackgroundImage(assets.image`cityscape0`)
+lists_of_people = ["wife", "butler", "neighbor"]
 let MainCharacter = sprites.create(img`
     . . . . . . . . . b 5 b . . . . 
     . . . . . . . . . b 5 b . . . . 
@@ -67,3 +69,4 @@ Collectibles = sprites.create(img`
 Collectibles.x = randint(32, 128)
 Collectibles.y = randint(32, 98)
 controller.moveSprite(MainCharacter)
+list_of_objects = ["potato chips", "gold toilets", "power splitter"]
