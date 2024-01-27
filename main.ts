@@ -2,6 +2,9 @@ namespace SpriteKind {
     export const npc = SpriteKind.create()
     export const greyed_npc = SpriteKind.create()
 }
+function StoryTeller (Stories: any[]) {
+	
+}
 function place_character_at_spot (spot: number) {
     if (spot == 0) {
         tiles.placeOnTile(customer, tiles.getTileLocation(2, 5))
