@@ -55,8 +55,12 @@ function StoryTeller (Stories: any[]) {
     "mixture",
     "hotel"
     ]
+    Adjective = ["Adjective 1", "Adjective 2", "Adjective 3"]
     Verb = ["Verb 1", "Verb 2", "Verb 3"]
-    Adverb = ["Verb 1", "Verb 2", "Verb 3"]
+    Adverb = ["Adverb 1", "Adverb 2", "Adverb 3"]
+    Names = ["Bob", "Brett", "Bingo"]
+    Class = ["Millionaire", "Billionaire", "Trillionaire"]
+    story.printCharacterText("Hello there! I'm" + Names._pickRandom() + "a" + Class._pickRandom() + "whose life is anything but ordinary. Allow me to recount a day filled with peculiar predicaments that only someone of my wealth could encounter.  Today begins on a" + Class._pickRandom() + "morning in my" + Class._pickRandom() + " mansion, nestled in " + Class._pickRandom() + " I had planned to wear my " + Class._pickRandom() + " suit, but to my", Names._pickRandom())
 }
 function place_character_at_spot (spot: number) {
     customer = sprites.create(assets.image`myImage2`, SpriteKind.npc)
@@ -85,7 +89,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 })
 let list: number[] = []
 let customer: Sprite = null
+let Class: string[] = []
+let Names: string[] = []
 let Adverb: string[] = []
+let Adjective: string[] = []
 let Noun: string[] = []
 let Verb: string[] = []
 info.setScore(0)
