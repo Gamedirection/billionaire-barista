@@ -55,7 +55,7 @@ function StoryTeller (storie: number) {
     "mixture",
     "hotel"
     ]
-    Adjective = ["Adjective 1", "Adjective 2", "Adjective 3"]
+    Adjective = ["tightfisted", "wistful", "responsible", "educated", "magical", "beneficial", "unique", "painstaking", "round", "half", "hungry", "handy", "embarrassed", "available", "victorious", "nasty", "premium", "red", "sturdy", "young", "familiar", "good", "tender", "spurious", "witty", "traditional", "testy", "groovy", "rural", "roomy", "voracious", "abstracted", "ordinary", "impartial", "profuse", "miniature", "stingy", "quixotic", "cruel", "harmonious", "pink", "several", "garrulous", "joyous", "cultural", "chief", "momentous", "brash", "slimy", "Grieving"]
     Verb = ["Verb 1", "Verb 2", "Verb 3"]
     Adverb = ["Adverb 1", "Adverb 2", "Adverb 3"]
     Names = ["Bob", "Brett", "Bingo"]
