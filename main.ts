@@ -8,6 +8,7 @@ function StoryTeller (Stories: any[]) {
     Adverb = ["Verb 1", "Verb 2", "Verb 3"]
 }
 function place_character_at_spot (spot: number) {
+    customer = sprites.create(assets.image`myImage2`, SpriteKind.npc)
     if (spot == 0) {
         tiles.placeOnTile(customer, tiles.getTileLocation(2, 5))
         customer.y += -3
@@ -32,9 +33,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
     }
 })
 let list: number[] = []
+let customer: Sprite = null
 let Adverb: string[] = []
 let Noun: string[] = []
-let customer: Sprite = null
 let Verb: string[] = []
 info.setScore(0)
 scene.setBackgroundImage(assets.image`cityscape0`)
@@ -46,19 +47,18 @@ let cursor = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . 1 1 1 . . . . . . . 
-    . . . . . . 1 3 1 . . . . . . . 
-    . . . . . . 1 3 1 . . . . . . . 
-    . . . 1 1 1 1 3 1 1 1 1 . . . . 
-    . . . 1 3 3 3 3 3 3 3 1 . . . . 
-    . . . 1 1 1 1 3 1 1 1 1 . . . . 
-    . . . . . . 1 3 1 . . . . . . . 
-    . . . . . . 1 3 1 . . . . . . . 
+    . . . . . . 1 c 1 . . . . . . . 
+    . . . . . . 1 c 1 . . . . . . . 
+    . . . 1 1 1 1 c 1 1 1 1 . . . . 
+    . . . 1 c c c c c c c 1 . . . . 
+    . . . 1 1 1 1 c 1 1 1 1 . . . . 
+    . . . . . . 1 c 1 . . . . . . . 
+    . . . . . . 1 c 1 . . . . . . . 
     . . . . . . 1 1 1 . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
-customer = sprites.create(assets.image`myImage2`, SpriteKind.npc)
 controller.moveSprite(cursor)
 cursor.z = 30
 place_character_at_spot(1)

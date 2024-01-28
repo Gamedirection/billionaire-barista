@@ -7,7 +7,12 @@
         "Timers": "github:microsoft/arcade-timers#v1.1.0",
         "arcade-background-scroll": "github:microsoft/arcade-background-scroll#6cfbf925b9a4d5ddf3e1078e6cf6ca6a1aebb301",
         "arcade-tile-util": "github:microsoft/arcade-tile-util#v1.1.0",
-        "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3"
+        "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3",
+        "arcade-sprite-data": "github:microsoft/arcade-sprite-data#v0.2.1",
+        "BetterSettings": "github:S0m3randomguy/BetterSettings#2023.5.1",
+        "arcade-sprite-util": "github:jwunderl/arcade-sprite-util#v0.4.1",
+        "arcade-sprite-events": "github:riknoll/arcade-sprite-events#dc93eec8412053ebbd2b8f01cf5b6ae285d28900",
+        "Console Overlay": "github:meeeeeeeep1/Console-Overlay#v0.1.0"
     },
     "files": [
         "main.blocks",
