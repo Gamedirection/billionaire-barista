@@ -2,7 +2,7 @@ namespace SpriteKind {
     export const npc = SpriteKind.create()
     export const greyed_npc = SpriteKind.create()
 }
-function StoryTeller (Stories: any[]) {
+function StoryTeller (storie: number) {
     Noun = [
     "map",
     "computer",
@@ -60,8 +60,11 @@ function StoryTeller (Stories: any[]) {
     Adverb = ["Adverb 1", "Adverb 2", "Adverb 3"]
     Names = ["Bob", "Brett", "Bingo"]
     Class = ["Millionaire", "Billionaire", "Trillionaire"]
-    story.printCharacterText("Hello there! I'm" + Names._pickRandom() + "a" + Class._pickRandom() + "whose life is anything but ordinary. Allow me to recount a day filled with peculiar predicaments that only someone of my wealth could encounter.  Today begins on a" + Class._pickRandom() + "morning in my" + Class._pickRandom() + " mansion, nestled in " + Class._pickRandom() + " I had planned to wear my " + Class._pickRandom() + " suit, but to my", Names._pickRandom())
+    story.printCharacterText("Hello there! I'm " + Names._pickRandom() + " a " + Class._pickRandom() + " whose life is anything but ordinary. Allow me to recount a day filled with peculiar predicaments that only someone of my wealth could encounter.  Today begins on a" + Adjective._pickRandom() + "morning in my" + Noun._pickRandom() + " mansion, nestled in " + Noun._pickRandom() + " I had planned to wear my " + Adjective._pickRandom() + "suit, but to my " + Noun._pickRandom() + ", I found it " + Noun._pickRandom() + " shrunk by the laundry service. \"This is " + Adjective._pickRandom() + "!\" I exclaimed." + Noun._pickRandom() + "For breakfast, I fancied some " + Noun._pickRandom() + ", but my chef, " + Names._pickRandom() + ", informed me that the " + Noun._pickRandom() + " was broken. \"Preposterous!\" I cried, opting for a mundane " + Noun._pickRandom() + ".Seeking solace, I decided to visit my " + Noun._pickRandom() + " via my " + Noun._pickRandom() + ". Alas, my " + Noun._pickRandom() + " informed me of a " + Adjective._pickRandom() + ". \"This is utterly " + Noun._pickRandom() + "!\" I grumbled." + Noun._pickRandom() + "Feeling " + Noun._pickRandom() + ", I thought a bit of shopping might help. I desired a " + Noun._pickRandom() + ", but upon reaching " + Noun._pickRandom() + ", I discovered they had just sold the last one. \"How " + Noun._pickRandom() + "!\" I lamented. Lunch was no better. I craved " + Noun._pickRandom() + ", but " + Noun._pickRandom() + " told me we were out of " + Noun._pickRandom() + "!\" I sighed, settling for " + Noun._pickRandom() + ". The afternoon brought its own trials. I wanted to relax in my " + Noun._pickRandom() + ", but " + Noun._pickRandom() + " reported a " + Noun._pickRandom() + " with it. \"Is this a " + Noun._pickRandom() + " joke?\" I wondered. Come dinner, I longed for " + Noun._pickRandom() + ", but a " + Noun._pickRandom() + " made it impossible. \"This is beyond " + Noun._pickRandom() + "!\" I declared, choosing " + Noun._pickRandom() + "instead.  As I retired to my " + Noun._pickRandom() + ", I couldn't help but chuckle at the day's " + Noun._pickRandom() + " mishaps. Despite everything, I knew tomorrow would bring more " + Noun._pickRandom() + " adventures in my life as a " + Class._pickRandom() + ".", Names._pickRandom())
 }
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    StoryTeller(1)
+})
 function place_character_at_spot (spot: number) {
     customer = sprites.create(assets.image`myImage2`, SpriteKind.npc)
     if (spot == 0) {
