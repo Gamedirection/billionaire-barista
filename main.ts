@@ -3,7 +3,9 @@ namespace SpriteKind {
     export const greyed_npc = SpriteKind.create()
 }
 function StoryTeller (Stories: any[]) {
-	
+    Noun = ["Noun 1", "Noun 2", "Noun 3"]
+    Verb = ["Verb 1", "Verb 2", "Verb 3"]
+    Adverb = ["Verb 1", "Verb 2", "Verb 3"]
 }
 function place_character_at_spot (spot: number) {
     if (spot == 0) {
@@ -30,11 +32,14 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
     }
 })
 let list: number[] = []
+let Adverb: string[] = []
+let Noun: string[] = []
 let customer: Sprite = null
+let Verb: string[] = []
 info.setScore(0)
 scene.setBackgroundImage(assets.image`cityscape0`)
 tiles.setCurrentTilemap(tileUtil.createSmallMap(tilemap`level1`))
-let text_list = ["This is Message A", "This is Message B", "This is Message C"]
+Verb = ["This is Message A", "This is Message B", "This is Message C"]
 let cursor = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
